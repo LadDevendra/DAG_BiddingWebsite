@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache name="myappcache"
+       xsi:noNamespaceSchemaLocation="ehcache.xsd"
+       updateCheck="false" monitoring="autodetect"
+       dynamicConfig="true"
+       maxBytesLocalHeap="10m"
+       maxBytesLocalDisk="1g"
+       timeToIdleSeconds="3600">
+</ehcache>

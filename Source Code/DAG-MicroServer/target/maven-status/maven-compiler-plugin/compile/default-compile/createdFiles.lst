@@ -1,0 +1,16 @@
+entity/Bid.class
+utility/SellJob.class
+entity/Customer.class
+controller/ProductController.class
+utility/EmailManager.class
+utility/JobInitialisation.class
+utility/EmailManager$2.class
+utility/HibSessionBuilder.class
+entity/UserLoginData.class
+utility/ORMDemo.class
+controller/BidController.class
+controller/CustomerController.class
+entity/BidDisplay.class
+utility/AuthKeyGenerator.class
+entity/Product.class
+utility/EmailManager$1.class

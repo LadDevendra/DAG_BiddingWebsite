@@ -1,0 +1,488 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DAG-MicroServer",
+		"_postman_id": "7c6f55cf-3555-004a-b799-56f9ad588f6c",
+		"description": "WPL project done in Spring of 2017 with Amruta and Gayatri",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "isLoggedIn",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/isLoggedIn/1/7833",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "emailId",
+							"value": "dev@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfile",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/updateProfile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "13",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "name",
+							"value": "devendra",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contactNo",
+							"value": "34567",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "address",
+							"value": "hsbdjshbf",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "emailId",
+							"value": "devendralad22@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUserId",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/getUserId",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "emailId",
+							"value": "dev@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "insertUserData",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/insertUserData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "omkar",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contactNo",
+							"value": "5632748234",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "address",
+							"value": "601 W renner Rd apt 113",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "emailId",
+							"value": "omkar@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "isEmailIdAvailable",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/isEmailIdAvailable",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "emailId",
+							"value": "dev@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "sendEmail",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/sendEmail",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "emailId",
+							"value": "devendralad22@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "checkLoginCred",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/checkLoginCred",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "emailId",
+							"value": "devendralad22@gmail.com",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateLoginInfo",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/updateLoginInfo",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "logOut",
+			"request": {
+				"url": "https://localhost:8443/DAG-MicroServer/customer/logOut/13",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/product/createProduct/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "name",
+							"value": "YoProd",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "Very Good",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "startBid",
+							"value": "13",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sellDate",
+							"value": "21-04-2017 00:00:00",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getMyProducts",
+			"request": {
+				"url": "https://localhost:8444/DAG-MicroServer/product/getMyProducts/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/product/deleteProduct/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "bidForItem",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/bid/bidForItem",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "productId",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount",
+							"value": "50",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getMyBids",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/bid/getMyBids/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProductBids",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/bid/getProductBids/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBid",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/bid/deleteBid/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getUserProfile",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/customer/getUserProfile/13",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "searchForProduct",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/product/searchForProduct",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "keyWord",
+							"value": "yo",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"url": "http://localhost:8080/DAG-MicroServer/product/getProduct/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

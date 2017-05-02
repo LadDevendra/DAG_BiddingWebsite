@@ -1,0 +1,387 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DAG Web Services",
+		"_postman_id": "ff1bdf36-245a-14e3-68ce-7c5cd53aa066",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getUserProfile",
+			"request": {
+				"url": "http://localhost:8080/DAG-Server/customer/getUserProfile/2/1184",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"url": "https://localhost:8444/DAG-Server/customer/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "gayatri prabhu",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contactNo",
+							"value": "34567",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "address",
+							"value": "hsbdjshbf",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "emailId",
+							"value": "gayatriprabhu04@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "logIn",
+			"request": {
+				"url": "https://localhost:8444/DAG-Server/customer/logIn",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "emailId",
+							"value": "gayatriprabhu04@gmail.com",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "logOut",
+			"request": {
+				"url": "https://localhost:8444/DAG-Server/customer/logOut/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "postItemForSale",
+			"request": {
+				"url": "https://localhost:8444/DAG-Server/product/postItemForSale",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "authKey",
+							"value": "7918",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "name",
+							"value": "A chair",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "description",
+							"value": "A chair with four legs used for sitting purposes.",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "startBid",
+							"value": "20000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "sellDate",
+							"value": "01-05-2017 20:35:00",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getMyProducts",
+			"request": {
+				"url": "https://localhost:8444/DAG-Server/product/getMyProducts/1/7918",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct",
+			"request": {
+				"url": "http://localhost:8080/DAG-Server/product/deleteProduct/1/1932/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "bidForItem",
+			"request": {
+				"url": "http://localhost:8080/DAG-Server/bid/bidForItem",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "productId",
+							"value": "2",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "amount",
+							"value": "56000",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "authKey",
+							"value": "7357",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBid",
+			"request": {
+				"url": "http://localhost:8080/DAG-Server/bid/deleteBid/1/1932/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getMyBids",
+			"request": {
+				"url": "https://localhost:8444/DAG-Server/bid/getMyBids/2/1184",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProductBids",
+			"request": {
+				"url": "https://localhost:8444/DAG-Server/bid/getProductBids/2/1184/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfile",
+			"request": {
+				"url": "http://localhost:8080/DAG-Server/customer/updateProfile",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "authKey",
+							"value": "1932",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "customerId",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "name",
+							"value": "Gayatri121312",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "contactNo",
+							"value": "1234567",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "address",
+							"value": "somewhere",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "emailId",
+							"value": "yo@gmail.com",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "searchForProduct",
+			"request": {
+				"url": "http://localhost:8080/DAG-Server/product/searchForProduct",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "customerId",
+							"value": "1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "authKey",
+							"value": "8236",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "keyWord",
+							"value": "yo",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"url": "http://localhost:8080/DAG-Server/product/getProduct/2/1184/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
