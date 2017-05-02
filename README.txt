@@ -1,9 +1,3 @@
-Instructions on how to access demo:
+A Bidding website - D.A.G.
 
-1.Import all three projects- DAG-client, DAG-Server, DAG-MicroServer
-2.Update maven dependencies for DAG-Server and DAG-MicroServer, and add following jar dependencies for DAG-client (json, compression filter, commons logging, jersey client, jersey api and jersey core)
-3.Convert these projects into .war files.
-4.Host jersey client on apache Tomcat1 (Port 8443) and web server and micro server on tomcat2(Port 8444).
-5.Also, create a database named DAG in MySQL.
-6.To access on local host use link: https://localhost:8443/DAG-client 
-(This will tak you to the login page/ first page)
+Architecture <img width="826" alt="screen shot 2017-05-02 at 4 29 43 pm" src="https://cloud.githubusercontent.com/assets/13588019/25640786/9d42c55a-2f56-11e7-9cfb-a900bdb560eb.png">
