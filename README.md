@@ -5,7 +5,7 @@ A Bidding website - D.A.G.
 
 ![Alt text](https://cloud.githubusercontent.com/assets/13588019/25640786/9d42c55a-2f56-11e7-9cfb-a900bdb560eb.png "Optional title")
 
-2. Technologies Used<br/>
+2. Technologies Used<br/><br/>
 -MicroServices for scalability<br/>
 -JSP<br/>
 -Bootstrap HTML5 UI<br/>
